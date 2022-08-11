@@ -1,26 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Kanta from './haeKaikki.js';
-import Asemat from './haeAsemat.js';
-import Tiedot from './haeTiedot.js';
-import './tyyli.css';
+import Journey from './journey.js';
+import Listed from './listed.js';
+import Station from './station.js';
+import './style.css';
 
-const kaikki = () => {
+const journey = () => {
 
-    ReactDOM.render( < Kanta / > , document.getElementById('komponentit'));
-
-}
-
-const asemat = () => {
-
-    ReactDOM.render( < Asemat / > , document.getElementById('komponentit'));
+    ReactDOM.render( < Journey / > , document.getElementById('components'));
 
 }
 
-const tiedot = () => {
+const list = () => {
 
-    ReactDOM.render( < Tiedot / > , document.getElementById('komponentit'));
+    ReactDOM.render( < Listed / > , document.getElementById('components'));
+
+}
+
+const info = () => {
+
+    ReactDOM.render( < Station / > , document.getElementById('components'));
 
 }
 
@@ -45,38 +45,38 @@ function App() {
         div id = "container" >
 
         <
-        h3 > City Bike - app < /h3>
+        h3 > Helsinki City Bike - app < /h3>
 
 
         <
         p > < i > Choose data to view: < /i></p >
 
         <
-        button className = "nappi"
+        button className = "button"
         onClick = {
-            kaikki
+            journey
         } > Journey List < /button>
 
         <
-        button className = "nappi"
+        button className = "button"
         onClick = {
-            asemat
+            list
         } > Station List < /button>
 
         <
-        button className = "nappi"
+        button className = "button"
         onClick = {
-            tiedot
+            info
         } > Station Info < /button>
 
         <
-        button className = "nappi"
+        button className = "button"
         onClick = {
             license
         } > Data License < /button>
 
         <
-        div id = "komponentit" >
+        div id = "components" >
 
         <
         /div>

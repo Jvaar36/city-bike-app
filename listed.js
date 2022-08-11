@@ -1,8 +1,8 @@
-const Asemat = () => {
+const Listed = () => {
 
     const axios = require('axios').default;
 
-    axios.get('http://localhost/SolitaDev/kaikkiA.php')
+    axios.get('http://localhost/SolitaDev/listed.php')
         .then(function (response) {
 
             document.getElementById('main').innerHTML = response.data;
@@ -16,8 +16,8 @@ const Asemat = () => {
         >
 
         <
-        h3 > All stations listed: < /h3>
-
+        h3 > All stations listed: < /h3> <
+        p > All Helsinki region bike stations listed. < /p>
 
         <
         />
@@ -25,4 +25,4 @@ const Asemat = () => {
 
 };
 
-export default Asemat;
+export default Listed;

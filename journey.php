@@ -1,13 +1,13 @@
 <?php
 
-$host = "localhost";
-$username = "solitadev";
-$password = "solitapw";
-$database = "solitadev";
+$host = "";
+$username = "";
+$password = "";
+$database = "";
 
 $conn = mysqli_connect($host, $username, $password, $database);
 
-$sqlRead = "SELECT * FROM bikingroute";
+$sqlRead = "SELECT * FROM bikingroute LIMIT 100";
 
 $queryRead = mysqli_query($conn, $sqlRead);
 
@@ -38,8 +38,6 @@ echo "</tr>";
 foreach ($rows as $i => $oneRow) {
 
 echo "<tr>";
-
-
 
 echo "<td><p>" . $rows[$i]['Departure station name'] . "</p></td>";
 

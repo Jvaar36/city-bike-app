@@ -1,0 +1,22 @@
+Helsinki City Bike -app, testing:
+---------------------------------
+
+1. All code translated to English, functional test ||| Result: All translations function properly.
+
+----
+
+2. Overall function component functional test ||| Result: All function components function properly.
+
+----
+
+3. Overall functional test for component output ||| Result: Component outputs function properly.
+
+----
+
+4. Overall database data fetch by AXIOS, test ||| Result: Data fetched to main window properly.
+
+----
+
+5. Overall layout design/CSS functional test ||| Result: Layout displays and holds together properly.
+
+----
