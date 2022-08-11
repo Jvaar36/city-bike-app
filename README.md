@@ -2,8 +2,6 @@
 React/PHP -app of data presentation
 
 
-Solita Dev Academy, Pre-Assignment, City Bike -App
---------------------------------------------------
 
 This app is a React/NodeJs single page application on the front-end,
 and on the back-end a PHP/MySQL -server, -database application.
